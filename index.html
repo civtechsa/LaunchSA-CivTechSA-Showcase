@@ -13,6 +13,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 
@@ -40,14 +41,15 @@
                             <div class="col-md-5"><img src="//dummyimage.com/1005x559.png/5fa2dd/ffffff" class="float-right img-fluid img-rounded"></div>
                         </div>
                     </div>
-                    <div id="messages1" class="tab-pane fade">
-                        <div class="list-group"><a href="" class="list-group-item d-inline-block"><span class="float-right badge badge-pill badge-dark">44</span> Message 1</a> <a href="" class="list-group-item d-inline-block"><span class="float-right badge badge-pill badge-dark">8</span> Message 2</a>                            <a href="" class="list-group-item d-inline-block"><span class="float-right badge badge-pill badge-dark">23</span> Message 3</a> <a href="" class="list-group-item d-inline-block text-muted">Message n..</a></div>
-                    </div>
+                    <div id="messages1" class="tab-pane fade"></div>
                 </div>
             </div>
         </div>
     </section>
     
-
+  <script>
+    document.getElementById('messages1').innerHTML =
+      marked('# Marked in the browser\n\nRendered by **marked**.');
+  </script>
 </body>
 </html>
