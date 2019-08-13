@@ -100,20 +100,37 @@
                 <div id="tabsJustifiedContent" class="tab-content">
                     <div id="education" class="tab-pane fade active show">
                         <div class="row pb-2">
-                            <div id="education_content" class="col-md-7">
-                                education_content
+                            <div class="col-md-12">
+                                <div class="image-wrapper float-right pr-3 pl-3" style="height: inherit">
+                                    <div class="pb-5"><img
+                                            src="https://www.civtech-sa.com/wp-content/uploads/2018/01/neonbrand-426918-300x225.jpg"
+                                            alt="CivTechSA will be inviting schools to work on civic problems and gain real world experience"
+                                            title="CivTechSA in Schools">
+                                    </div>
+                                    <img src="https://www.civtech-sa.com/wp-content/uploads/2018/05/stefan-stefancik-257625-300x225.jpg"
+                                        lt="Team &amp; Operations Floats" title="Team &amp; Operations Floats">
+                                </div>
+                                <div id="education_content" class="single-post-content-wrapper p-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga
+                                    minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum
+                                    enim soluta omnis debitis quam ab nemo necessitatibus.
+                                </div>
                             </div>
-                            <div class="col-md-5"><img src="https://dummyimage.com/1005x559.png/5fa2dd/ffffff"
-                                    class="float-right img-fluid img-rounded"></div>
                         </div>
                     </div>
                     <div id="entrepreneur" class="tab-pane fade">
                         <div class="row pb-2">
-                            <div id="entrepreneur_content" class="col-md-7">
-                                entrepreneur_content
+                            <div class="col-md-12">
+                                <div class="image-wrapper float-right pr-3">
+                                    <img src="https://www.civtech-sa.com/wp-content/uploads/2018/05/stefan-stefancik-257625-300x225.jpg"
+                                        lt="Team &amp; Operations Floats" title="Team &amp; Operations Floats">
+                                </div>
+                                <div id="entrepreneur_content" class="single-post-content-wrapper p-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga
+                                    minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum
+                                    enim soluta omnis debitis quam ab nemo necessitatibus.
+                                </div>
                             </div>
-                            <div class="col-md-5"><img src="https://dummyimage.com/1005x559.png/5fa2dd/ffffff"
-                                    class="float-right img-fluid img-rounded"></div>
                         </div>
                     </div>
                     <div id="residency" class="tab-pane fade">
@@ -129,11 +146,6 @@
                                     enim soluta omnis debitis quam ab nemo necessitatibus.
                                 </div>
                             </div>
-
-
-
-
-
                         </div>
                     </div>
                 </div>
@@ -142,8 +154,20 @@
     </section>
 
     <script>
+        document.getElementById('education_content').innerHTML =
+            marked(`# The 6-12th Grade Program
+As students solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA) to solve real-world civic problems and gain necessary skills for their future. This collaboration between students, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.
+<br />
+<br />
+<br />
+<br />
+# The Higher Education Program
+As students solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA) to solve real-world civic problems and gain necessary skills for their future. This collaboration between students, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.`);
+        document.getElementById('entrepreneur_content').innerHTML =
+            marked(`# The Entrepreneur Program
+As entrepreneurs solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA). This connection fosters the local startup ecosystem and promotes small businesses in San Antonio. This collaboration between entrepreneurs, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.`);
         document.getElementById('residency_content').innerHTML =
-            marked(`## The Residency Program
+            marked(`# The Residency Program
 The CivTechSA Residency Program is an open invitation to startups as defined in the application. This means startups that have been incorporated for less than 5 years with fewer than 10 employees and are actively working towards innovation, development, deployment, and the commercialization of new products and/or services driven by tech or intellectual property, and have less than $2 million run rate.`);
     </script>
 </body>
