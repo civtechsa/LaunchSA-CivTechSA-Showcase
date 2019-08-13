@@ -31,6 +31,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="true">
     <style>
         body {
             background-image: url(https://www.civtech-sa.com/wp-content/uploads/2018/01/civtechSA-2-2.png);
@@ -122,16 +124,31 @@
                     <div id="education" class="tab-pane fade active show">
                         <div class="row pb-2">
                             <div class="col-md-12">
-                                <div class="image-wrapper float-right pr-3 pl-5">
+                                <div class="image-wrapper float-sm-none float-md-right pr-3 pl-5 col-xs-12 col-sm-12 col-md-4"
+                                    style="text-align: center;">
                                     <div class="pb-5"><img
                                             src="https://www.civtech-sa.com/wp-content/uploads/2018/01/neonbrand-426918-300x225.jpg"
                                             alt="CivTechSA will be inviting schools to work on civic problems and gain real world experience"
                                             title="CivTechSA in Schools">
                                     </div>
-                                    <img src="https://www.civtech-sa.com/wp-content/uploads/2018/05/stefan-stefancik-257625-300x225.jpg"
-                                        lt="Team &amp; Operations Floats" title="Team &amp; Operations Floats">
                                 </div>
-                                <div id="education_content" class="single-post-content-wrapper p-3">
+                                <div id="education_content_1"
+                                    class="col-md-8 col-sm-12 single-post-content-wrapper p-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga
+                                    minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum
+                                    enim soluta omnis debitis quam ab nemo necessitatibus.
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="image-wrapper float-sm-none float-md-right pr-3 pl-5 col-xs-12 col-sm-12 col-md-4"
+                                    style="text-align: center;">
+                                    <div class="pb-5">
+                                        <img src="https://www.civtech-sa.com/wp-content/uploads/2018/05/stefan-stefancik-257625-300x225.jpg"
+                                            lt="Team &amp; Operations Floats" title="Team &amp; Operations Floats">
+                                    </div>
+                                </div>
+                                <div id="education_content_2"
+                                    class="col-md-8 col-sm-12 single-post-content-wrapper p-3">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga
                                     minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum
                                     enim soluta omnis debitis quam ab nemo necessitatibus.
@@ -142,11 +159,13 @@
                     <div id="entrepreneur" class="tab-pane fade">
                         <div class="row pb-2">
                             <div class="col-md-12">
-                                <div class="image-wrapper float-right pr-3 pl-5">
+                                <div class="image-wrapper float-sm-none float-md-right pr-3 pl-5 col-xs-12 col-sm-12 col-md-4"
+                                    style="text-align: center;">
                                     <img src="https://www.civtech-sa.com/wp-content/uploads/2018/05/stefan-stefancik-257625-300x225.jpg"
                                         lt="Team &amp; Operations Floats" title="Team &amp; Operations Floats">
                                 </div>
-                                <div id="entrepreneur_content" class="single-post-content-wrapper p-3">
+                                <div id="entrepreneur_content"
+                                    class="col-md-8 col-sm-12 single-post-content-wrapper p-3">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga
                                     minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum
                                     enim soluta omnis debitis quam ab nemo necessitatibus.
@@ -157,11 +176,12 @@
                     <div id="residency" class="tab-pane fade">
                         <div class="row pb-2">
                             <div class="col-md-12">
-                                <div class="image-wrapper float-right pr-3 pl-5">
+                                <div class="image-wrapper float-sm-none float-md-right pr-3 pl-5 col-xs-12 col-sm-12 col-md-4"
+                                    style="text-align: center;">
                                     <img src="https://www.civtech-sa.com/wp-content/uploads/2018/04/Reckon-Point_City-Manager-300x225.jpg"
                                         alt="CivTechSA Residency Celebration" title="CivTechSA Residency Celebration">
                                 </div>
-                                <div id="residency_content" class="single-post-content-wrapper p-3">
+                                <div id="residency_content" class="col-md-8 col-sm-12 single-post-content-wrapper p-3">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga
                                     minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum
                                     enim soluta omnis debitis quam ab nemo necessitatibus.
@@ -175,14 +195,15 @@
     </section>
 
     <script>
-        document.getElementById('education_content').innerHTML =
+        document.getElementById('education_content_1').innerHTML =
             marked(`# The 6-12th Grade Program
 As students solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA) to solve real-world civic problems and gain necessary skills for their future. This collaboration between students, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.
 <br />
 <br />
 <br />
-<br />
-# The Higher Education Program
+<br />`);
+        document.getElementById('education_content_2').innerHTML =
+            marked(`# The Higher Education Program
 As students solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA) to solve real-world civic problems and gain necessary skills for their future. This collaboration between students, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.
 <br />
 <br />
