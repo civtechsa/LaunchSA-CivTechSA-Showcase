@@ -1,7 +1,7 @@
 {
   "education": {
     "grade": {
-      "year1": [
+      "Year 1": [
         {
           "name": "Burn notice",
           "source": "Codeup Web Development Project",
@@ -17,7 +17,7 @@
           "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
         }
       ],
-      "year2": [
+      "Year 2": [
         {
           "name": "Burn notice",
           "source": "Codeup Web Development Project",
@@ -28,7 +28,7 @@
       ]
     },
     "higher": {
-      "year1": [
+      "Year 1": [
         {
           "name": "Burn notice",
           "source": "Codeup Web Development Project",
@@ -44,7 +44,7 @@
           "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
         }
       ],
-      "year2": [
+      "Year 2": [
         {
           "name": "Burn notice",
           "source": "Codeup Web Development Project",
@@ -56,7 +56,7 @@
     }
   },
   "enterprenership":{
-    "year1": [
+    "Year 1": [
       {
         "name": "Burn notice",
         "source": "Codeup Web Development Project",
@@ -74,7 +74,7 @@
     ]
   },
   "residency":{
-    "year1": [
+    "Year 1": [
       {
         "name": "Burn notice",
         "source": "Codeup Web Development Project",
