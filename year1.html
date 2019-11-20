@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CivTechSA</title>
+  <link rel="icon" type="image/png"
+    href="https://github.com/civtechsa/LaunchSA-CivTechSA-Showcase/blob/master/android-chrome-192x192.png?raw=true"
+    sizes="192x192">
+  <link rel="icon" type="image/png"
+    href="https://github.com/civtechsa/LaunchSA-CivTechSA-Showcase/blob/master/android-chrome-512x512.png?raw=true"
+    sizes="512x512">
+  <link rel="icon" type="image/png"
+    href="https://github.com/civtechsa/LaunchSA-CivTechSA-Showcase/blob/master/favicon-16x16.png?raw=true"
+    sizes="16x16">
+  <link rel="icon" type="image/png"
+    href="https://github.com/civtechsa/LaunchSA-CivTechSA-Showcase/blob/master/favicon-32x32.png?raw=true"
+    sizes="32x32">
+  <link rel="shortcut icon"
+    href="https://raw.githubusercontent.com/civtechsa/LaunchSA-CivTechSA-Showcase/master/favicon.ico?raw=true" />
+  <base target="_blank">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="HandheldFriendly" content="true"> -->
+  <style>
+    body {
+      background-image: url(https://www.civtech-sa.com/wp-content/uploads/2018/01/civtechSA-2-2.png);
+      background-size: 175px;
+      background-repeat: no-repeat;
+    }
+
+    @media screen and (max-width: 1440px) {
+      body {
+        background-size: 150px;
+      }
+    }
+
+    @media screen and (max-width: 1400px) {
+      body {
+        background-size: 120px;
+      }
+    }
+
+    @media screen and (max-width: 1350px) {
+      body {
+        background-size: 150px;
+      }
+
+      #content {
+        margin-top: 7em;
+      }
+    }
+
+    @media screen and (max-width: 1165px) {
+      body {
+        background-size: 120px;
+      }
+
+      #content {
+        margin-top: 5em;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      body {
+        background-size: 150px;
+      }
+    }
+
+    @media screen and (max-width: 930px) {
+      body {
+        background-size: 120px;
+      }
+    }
+
+
+
+    @media screen and (max-width: 750px) {
+      body {
+        background-size: 120px;
+      }
+
+      #title_1 {
+        font-size: 2em !important;
+      }
+    }
+
+    @media screen and (max-width: 725px) {
+      body {
+        background-size: 75px;
+      }
+
+      #content {
+        margin-top: 3em;
+      }
+    }
+
+    #title_1 {
+      font-size: 3.5em;
+      margin: 0.2em auto;
+      font-family: 'Poiret One';
+      font-weight: bold;
+      text-align: center;
+    }
+
+    blockquote {
+      color: rgba(0, 0, 0, .5);
+      padding-left: 1.5em;
+      border-left: 5px solid rgba(0, 0, 0, .1);
+    }
+
+    .nav-link {
+      padding: .5rem 0.97rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="container py-4">
+    <div class="row">
+
+      <div id="content" class="col-md-8 col-sm-12 single-post-content-wrapper p-3"></div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('content').innerHTML =
+      marked(`
+# Year 1
+<br /> 
+
+
+`);
+
+  </script>
+</body>
+
+</html>
