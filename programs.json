@@ -1,0 +1,94 @@
+{
+  "education": {
+    "grade": {
+      "year1": [
+        {
+          "name": "Burn notice",
+          "source": "Codeup Web Development Project",
+          "purpose": "Predictive model predicts drought within 6 months before the drought event.",
+          "slides": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing",
+          "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
+        },
+        {
+          "name": "Burn notice",
+          "source": "Codeup Web Development Project",
+          "purpose": "Predictive model predicts drought within 6 months before the drought event.",
+          "slides": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing",
+          "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
+        }
+      ],
+      "year2": [
+        {
+          "name": "Burn notice",
+          "source": "Codeup Web Development Project",
+          "purpose": "Predictive model predicts drought within 6 months before the drought event.",
+          "slides": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing",
+          "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
+        }
+      ]
+    },
+    "higher": {
+      "year1": [
+        {
+          "name": "Burn notice",
+          "source": "Codeup Web Development Project",
+          "purpose": "Predictive model predicts drought within 6 months before the drought event.",
+          "slides": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing",
+          "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
+        },
+        {
+          "name": "Burn notice",
+          "source": "Codeup Web Development Project",
+          "purpose": "Predictive model predicts drought within 6 months before the drought event.",
+          "slides": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing",
+          "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
+        }
+      ],
+      "year2": [
+        {
+          "name": "Burn notice",
+          "source": "Codeup Web Development Project",
+          "purpose": "Predictive model predicts drought within 6 months before the drought event.",
+          "slides": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing",
+          "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
+        }
+      ]
+    }
+  },
+  "enterprenership"{
+    "year1": [
+      {
+        "name": "Burn notice",
+        "source": "Codeup Web Development Project",
+        "purpose": "Predictive model predicts drought within 6 months before the drought event.",
+        "slides": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing",
+        "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
+      },
+      {
+        "name": "Burn notice",
+        "source": "Codeup Web Development Project",
+        "purpose": "Predictive model predicts drought within 6 months before the drought event.",
+        "slides": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing",
+        "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
+      }
+    ]
+  },
+  "residency"{
+    "year1": [
+      {
+        "name": "Burn notice",
+        "source": "Codeup Web Development Project",
+        "purpose": "Predictive model predicts drought within 6 months before the drought event.",
+        "slides": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing",
+        "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
+      },
+      {
+        "name": "Burn notice",
+        "source": "Codeup Web Development Project",
+        "purpose": "Predictive model predicts drought within 6 months before the drought event.",
+        "slides": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing",
+        "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
+      }
+    ]
+  }
+}
