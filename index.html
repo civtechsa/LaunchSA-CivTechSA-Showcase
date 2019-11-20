@@ -213,7 +213,7 @@ As students solve civic challenges through Geekdom’s CivTechSA Program, they b
 <br />
 ## 6-12th Grade`;
           $.each(document.programs["education"]["grade"], function (key, value) {
-            render += `\n ### <a href="javascript:void(0)" onclick="alert('Hi')" target="_self">` + key + `</a>`;
+            render += `\n ### <a href="javascript:void(0)" onclick="alert('Hi')" target="_self" data-toggle="modal">` + key + `</a>`;
           });
           $("#education_content_1").html(marked(render));
         })
