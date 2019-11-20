@@ -203,9 +203,9 @@
         $.each(data["education"]["grade"], function (key, value) {
           render += key
         });
-        $("#education_content_1").innerHTML = marked(render + `
+        $("#education_content_1").html(marked(render + `
         <br />
-        <br />`);
+        <br />`));
       })
         .fail(function () {
           colsole.log('Fail')
