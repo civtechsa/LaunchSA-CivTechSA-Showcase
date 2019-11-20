@@ -201,7 +201,7 @@
         ## 6-12th Grade 
 `
         $.each(data["education"]["grade"], function (key, value) {
-          render += ` <br />` + key
+          render += `\n<br />\n` + key
         });
         $("#education_content_1").html(marked(render));
       })
