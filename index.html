@@ -200,39 +200,41 @@
           </button>
         </div>
         <div class="modal-body">
+          Hiisdjflfldsj
         </div>
       </div>
     </div>
-    <script>
-      $(document).ready(function () {
-        $.getJSON("./programs.json").done(function (data) {
-          console.log(data)
-          document.programs = data;
-          let render = `# Education Pillar
+  </div>
+  <script>
+    $(document).ready(function () {
+      $.getJSON("./programs.json").done(function (data) {
+        console.log(data)
+        document.programs = data;
+        let render = `# Education Pillar
 As students solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA) to solve real-world civic problems and gain necessary skills for their future. This collaboration between students, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.
 <br />
 ## 6-12th Grade`;
-          $.each(document.programs["education"]["grade"], function (key, value) {
-            render += `\n ### <a href="javascript:void(0)" onclick="alert('Hi')" target="_self" data-toggle="modal">` + key + `</a>`;
-          });
-          $("#education_content_1").html(marked(render));
-          render = ``;
-          $.each(document.programs["education"]["higher"], function (key, value) {
-            render += `\n ### <a href="javascript:void(0)" onclick="alert('Hi')" target="_self" data-toggle="modal">` + key + `</a>`;
-          });
-          $("#education_content_2").html(marked(render));
-        })
-          .fail(function () {
-            colsole.log('Fail')
-          });
-        document.getElementById('entrepreneur_content').innerHTML =
-          marked(`# The Entrepreneur Program
-As entrepreneurs solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA). This connection fosters the local startup ecosystem and promotes small businesses in San Antonio. This collaboration between entrepreneurs, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.`);
-        document.getElementById('residency_content').innerHTML =
-          marked(`# The Residency Program
-The CivTechSA Residency Program is an open invitation to startups as defined in the application. This means startups that have been incorporated for less than 5 years with fewer than 10 employees and are actively working towards innovation, development, deployment, and the commercialization of new products and/or services driven by tech or intellectual property, and have less than $2 million run rate.`);
+        $.each(document.programs["education"]["grade"], function (key, value) {
+          render += `\n ### <a href="javascript:void(0)" onclick="alert('Hi')" target="_self" data-toggle="modal">` + key + `</a>`;
+        });
+        $("#education_content_1").html(marked(render));
+        render = ``;
+        $.each(document.programs["education"]["higher"], function (key, value) {
+          render += `\n ### <a href="javascript:void(0)" onclick="alert('Hi')" target="_self" data-toggle="modal">` + key + `</a>`;
+        });
+        $("#education_content_2").html(marked(render));
       })
-    </script>
+        .fail(function () {
+          colsole.log('Fail')
+        });
+      document.getElementById('entrepreneur_content').innerHTML =
+        marked(`# The Entrepreneur Program
+As entrepreneurs solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA). This connection fosters the local startup ecosystem and promotes small businesses in San Antonio. This collaboration between entrepreneurs, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.`);
+      document.getElementById('residency_content').innerHTML =
+        marked(`# The Residency Program
+The CivTechSA Residency Program is an open invitation to startups as defined in the application. This means startups that have been incorporated for less than 5 years with fewer than 10 employees and are actively working towards innovation, development, deployment, and the commercialization of new products and/or services driven by tech or intellectual property, and have less than $2 million run rate.`);
+    })
+  </script>
 </body>
 
 </html>
