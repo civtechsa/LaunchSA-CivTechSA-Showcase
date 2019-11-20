@@ -201,11 +201,9 @@
         ## 6-12th Grade 
 `
         $.each(data["education"]["grade"], function (key, value) {
-          render += key
+          render += ` <br />` + key
         });
-        $("#education_content_1").html(marked(render + `
-        <br />
-        <br />`));
+        $("#education_content_1").html(marked(render));
       })
         .fail(function () {
           colsole.log('Fail')
