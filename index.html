@@ -194,24 +194,22 @@
     $(document).ready(function () {
       $.getJSON("./programs.json").done(function (data) {
         console.log(data)
-
+        document.programs = data;
+        let render = `# Education Pillar
+        As students solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA) to solve real-world civic problems and gain necessary skills for their future. This collaboration between students, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.
+        <br />
+        ## 6-12th Grade 
+`
+        $.each(data["education"]["grade"], function (key, value) {
+          render += key
+        });
+        $("#education_content_1").innerHTML = marked(render + `
+        <br />
+        <br />`);
       })
         .fail(function () {
           colsole.log('Fail')
         });
-      document.getElementById('education_content_1').innerHTML =
-        marked(`# Education Pillar
-As students solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA) to solve real-world civic problems and gain necessary skills for their future. This collaboration between students, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.
-<br />
-## 6-12th Grade 
-### Year 1
-
-### Year 2
-
-### Year 3
-
-<br />
-<br />`);
       document.getElementById('education_content_2').innerHTML =
         marked(`## Higher Education
 
