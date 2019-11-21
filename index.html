@@ -236,7 +236,7 @@ As students solve civic challenges through Geekdom’s CivTechSA Program, they b
           $("#education_content_1").html(marked(render));
           render = ``;
           $.each(document.programs["education"]["higher"], function (key, value) {
-            render += `\n ### <a href="javascript:void(0)" onclick="alert('Hi')" target="_self" data-toggle="modal">` + key + `</a>`;
+            render += `\n ### <a href="javascript:void(0)" onclick="alert('Hi')" target="_self" data-toggle="modal" data-target="#exampleModalLong">` + key + `</a>`;
           });
           $("#education_content_2").html(marked(render));
         })
