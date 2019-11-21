@@ -219,6 +219,7 @@ As students solve civic challenges through Geekdom’s CivTechSA Program, they b
         });
         $("#education_content_1").html(marked(render));
         render = ``;
+## Higher Education`;
         $.each(document.programs["education"]["higher"], function (key, value) {
           render += `\n ### <a href="javascript:void(0)" onclick="alert('Hi')" target="_self" data-toggle="modal">` + key + `</a>`;
         });
@@ -228,12 +229,11 @@ As students solve civic challenges through Geekdom’s CivTechSA Program, they b
           colsole.log('Fail')
         });
       document.getElementById('entrepreneur_content').innerHTML =
-        marked(`# The Entrepreneur Program
+        marked(`# Entrepreneurship Pillar
 As entrepreneurs solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA). This connection fosters the local startup ecosystem and promotes small businesses in San Antonio. This collaboration between entrepreneurs, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.`);
       document.getElementById('residency_content').innerHTML =
-        marked(`# The Residency Program
-The CivTechSA Residency Program is an open invitation to startups as defined in the application. This means startups that have been incorporated for less than 5 years with fewer than 10 employees and are actively working towards innovation, development, deployment, and the commercialization of new products and/or services driven by tech or intellectual property, and have less than $2 million run rate.`);
-    })
+        marked(`# Residency Program
+The CivTechSA Residency Program is a 16-week program where the City invites startups to solve civic challenges in an effort to foster collaboration and growth. Our program had the opportunity of hosting four residents so far and they have been able to continue their work in the civic tech space. Each have unique stories and services that they can provide to any municipality. Check them out!})
   </script>
 </body>
 
