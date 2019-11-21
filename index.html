@@ -225,6 +225,7 @@
       function showModal(event) {
         event.preventDefault();
         let title = $('h5.modal-title')[0]
+        console.dir(event)
         let name = event.target.parentNode.getAttribute("data-name");
         let group = event.target.parentNode.getAttribute("data-group");
         title.innerText = name;
