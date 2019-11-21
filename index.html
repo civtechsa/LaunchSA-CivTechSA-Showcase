@@ -236,7 +236,7 @@
         } else {
           list_prog = document.programs[name][group]
         }
-      }
+
 
         $('#proposed-times tbody').empty()
         for (let i = 0; i < list_prog.length; i++) {
@@ -254,34 +254,35 @@
             fragment.append(tr);
           }
         }
-        $(document).ready(function () {
-          $.getJSON("./programs.json").done(function (data) {
-            console.log(data)
-            document.programs = data;
-            let render = `# Education Pillar
+      }
+      $(document).ready(function () {
+        $.getJSON("./programs.json").done(function (data) {
+          console.log(data)
+          document.programs = data;
+          let render = `# Education Pillar
 As students solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA) to solve real-world civic problems and gain necessary skills for their future. This collaboration between students, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.
 <br />
 ## 6-12th Grade`;
-            $.each(document.programs["education"]["grade"], function (key, value) {
-              render += `\n ### <a href="javascript:void(0)" onclick="showModal" target="_self" data-toggle="modal" data-target="#exampleModalLong" data-group="education grade" data-name="` + key + `">` + key + `</a>`;
-            });
-            $("#education_content_1").html(marked(render));
-            render = ``;
-            $.each(document.programs["education"]["higher"], function (key, value) {
-              render += `\n ### <a href="javascript:void(0)" onclick="showModal" target="_self" data-toggle="modal" data-target="#exampleModalLong" data-group="education higher" data-name="` + key + `">` + key + `</a>`;
-            });
-            $("#education_content_2").html(marked(render));
-          })
-            .fail(function () {
-              colsole.log('Fail')
-            });
-          document.getElementById('entrepreneur_content').innerHTML =
-            marked(`# Entrepreneur Pillar
-As entrepreneurs solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA). This connection fosters the local startup ecosystem and promotes small businesses in San Antonio. This collaboration between entrepreneurs, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.`);
-          document.getElementById('residency_content').innerHTML =
-            marked(`# Residency Pillar
-The CivTechSA Residency Program is a 16-week program where the City invites startups to solve civic challenges in an effort to foster collaboration and growth. Our program had the opportunity of hosting four residents so far and they have been able to continue their work in the civic tech space. Each have unique stories and services that they can provide to any municipality. Check them out!`);
+          $.each(document.programs["education"]["grade"], function (key, value) {
+            render += `\n ### <a href="javascript:void(0)" onclick="showModal" target="_self" data-toggle="modal" data-target="#exampleModalLong" data-group="education grade" data-name="` + key + `">` + key + `</a>`;
+          });
+          $("#education_content_1").html(marked(render));
+          render = ``;
+          $.each(document.programs["education"]["higher"], function (key, value) {
+            render += `\n ### <a href="javascript:void(0)" onclick="showModal" target="_self" data-toggle="modal" data-target="#exampleModalLong" data-group="education higher" data-name="` + key + `">` + key + `</a>`;
+          });
+          $("#education_content_2").html(marked(render));
         })
+          .fail(function () {
+            colsole.log('Fail')
+          });
+        document.getElementById('entrepreneur_content').innerHTML =
+          marked(`# Entrepreneur Pillar
+As entrepreneurs solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA). This connection fosters the local startup ecosystem and promotes small businesses in San Antonio. This collaboration between entrepreneurs, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.`);
+        document.getElementById('residency_content').innerHTML =
+          marked(`# Residency Pillar
+The CivTechSA Residency Program is a 16-week program where the City invites startups to solve civic challenges in an effort to foster collaboration and growth. Our program had the opportunity of hosting four residents so far and they have been able to continue their work in the civic tech space. Each have unique stories and services that they can provide to any municipality. Check them out!`);
+      })
     </script>
 </body>
 
