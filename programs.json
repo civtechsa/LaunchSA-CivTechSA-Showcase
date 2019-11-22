@@ -143,8 +143,7 @@
       }
     ]
   },
-  "residency":{
-    "Year 1": [
+  "residency": [
       {
         "name": "Burn notice residency 1 esfvsevsve",
         "source": "Codeup Web Development Project",
@@ -160,5 +159,4 @@
         "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
       }
     ]
-  }
 }
