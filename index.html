@@ -266,21 +266,45 @@ As students solve civic challenges through Geekdom’s CivTechSA Program, they b
             render += `\n ### <a href="javascript:void(0)" onclick="showModal(event)" target="_self" data-toggle="modal" data-target="#exampleModalLong" data-group="education grade" data-name="` + key + `">` + key + `</a>`;
           });
           $("#education_content_1").html(marked(render));
-          render = ``;
+          render = `## Higher Education`;
           $.each(document.programs["education"]["higher"], function (key, value) {
             render += `\n ### <a href="javascript:void(0)" onclick="showModal(event)" target="_self" data-toggle="modal" data-target="#exampleModalLong" data-group="education higher" data-name="` + key + `">` + key + `</a>`;
           });
           $("#education_content_2").html(marked(render));
+          render = `# Entrepreneurship Pillar
+As entrepreneurs solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA). This connection fosters the local startup ecosystem and promotes small businesses in San Antonio. This collaboration between entrepreneurs, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.`;
+          $.each(document.programs["enterprenership"], function (key, value) {
+            render += `\n ### <a href="javascript:void(0)" onclick="showModal(event)" target="_self" data-toggle="modal" data-target="#exampleModalLong" data-group="enterprenership" data-name="` + key + `">` + key + `</a>`;
+          });
+          $("#entrepreneur_content").html(marked(render));
+          render = `# Residency Pillar
+The CivTechSA Residency Program is a 16-week program where the City invites startups to solve civic challenges in an effort to foster collaboration and growth. Our program had the opportunity of hosting four residents so far and they have been able to continue their work in the civic tech space. Each have unique stories and services that they can provide to any municipality. Check them out!`;
+          $.each(document.programs["residency"], function (key, value) {
+            let slides = ``;
+          let repo = ``;
+          if (value['slides'].length > 0) {
+            slides = `[Slides](` + value['slides'] + `)`;
+          }
+          if (value['repo'].length > 0) {
+            repo = `[Github Repo](` + value['repo'] + `)`;
+          }
+          if (slides.length > 0 && repo.length > 0) {
+            slides += `,   `
+          }
+          render += `<br /> 
+
+### ` + value['name'] + `  
+
+> ` + value['source'] + `  
+
+**Purpose:** *` + value['purpose'] + `*  
+` + slides + repo;
+          });
+          $("#residency_content").html(marked(render));
         })
           .fail(function () {
             colsole.log('Fail')
           });
-        document.getElementById('entrepreneur_content').innerHTML =
-          marked(`# Entrepreneur Pillar
-As entrepreneurs solve civic challenges through Geekdom’s CivTechSA Program, they become directly involved with the City of San Antonio (COSA). This connection fosters the local startup ecosystem and promotes small businesses in San Antonio. This collaboration between entrepreneurs, CivTechSA and COSA, grows civically-minded tech talent in San Antonio while overcoming common civic challenges.`);
-        document.getElementById('residency_content').innerHTML =
-          marked(`# Residency Pillar
-The CivTechSA Residency Program is a 16-week program where the City invites startups to solve civic challenges in an effort to foster collaboration and growth. Our program had the opportunity of hosting four residents so far and they have been able to continue their work in the civic tech space. Each have unique stories and services that they can provide to any municipality. Check them out!`);
       })
     </script>
 </body>
