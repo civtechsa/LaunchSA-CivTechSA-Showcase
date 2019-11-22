@@ -226,8 +226,8 @@
         event.preventDefault();
         let title = $('h5.modal-title')[0]
         console.dir(event)
-        let name = event.target.parentNode.getAttribute("data-name");
-        let group = event.target.parentNode.getAttribute("data-group");
+        let name = event.target.getAttribute("data-name");
+        let group = event.target.getAttribute("data-group");
         title.innerText = name;
         let fragment = new DocumentFragment()
         let list_prog = []
@@ -237,8 +237,6 @@
         } else {
           list_prog = document.programs[name][group]
         }
-
-
         $('#proposed-times tbody').empty()
         for (let i = 0; i < list_prog.length; i++) {
           if (document.proposals[i].CourseId == id) {
