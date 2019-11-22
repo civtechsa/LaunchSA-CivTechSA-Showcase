@@ -238,7 +238,7 @@
         }
         $('#proposed-times tbody').empty()
         for (let i = 0; i < list_prog.length; i++) {
-          if (document.proposals[i].CourseId == id) {
+          if (document.programs[i].CourseId == id) {
             let tr = document.createElement("TR");
             let td = document.createElement("TD");
             td.append(document.createTextNode(list_prog[i]['name']));
