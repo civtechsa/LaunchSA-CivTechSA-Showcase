@@ -200,24 +200,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <table id="proposed-times" class="available table table-striped table-bordered table-sm" cellspacing="0"
-            width="100%" height="100%">
 
-            <thead class="text-info">
-              <tr>
-                <th class="th-sm">Proposed Days
-                </th>
-                <th class="th-sm">Start Time
-                </th>
-                <th class="th-sm">End Time
-                </th>
-                <th class="table-fix" style="width: 1em;">
-                </th>
-              </tr>
-            </thead>
-            <tbody style="max-height: 32.5em;">
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
@@ -228,7 +211,6 @@
         let name = event.target.getAttribute("data-name");
         let group = event.target.getAttribute("data-group");
         title.innerText = name;
-        let fragment = new DocumentFragment()
         let list_prog = []
         let group_list = group.split(" ");
         if (group_list.length == 2) {
@@ -236,23 +218,32 @@
         } else {
           list_prog = document.programs[group][name]
         }
-        $('#proposed-times tbody').empty()
+        $('.modal-body')[0].empty()
         console.dir(list_prog)
+        let render = ``
         for (let i = 0; i < list_prog.length; i++) {
           console.dir(list_prog[i])
-          let tr = document.createElement("TR");
-          let td = document.createElement("TD");
-          td.append(document.createTextNode(list_prog[i]['name']));
-          tr.append(td);
-          td = document.createElement("TD");
-          td.append(document.createTextNode(list_prog[i]['source']));
-          tr.append(td);
-          td = document.createElement("TD");
-          td.append(document.createTextNode(list_prog[i]['purpose']));
-          tr.append(td);
-          fragment.append(tr);
+          let slides = ``;
+          let repo = ``;
+          if (list_prog[i]['slides'].length > 0) {
+            slides = `[Slides](` + list_prog[i]['slides'] + `)`;
+          }
+          if (list_prog[i]['repo'].length > 0) {
+            slides = `[Github Repo](` + list_prog[i]['repo'] + `)`;
+          }
+          if (slides.length > 0 && repo.length > 0) {
+            slides += `,   `
+          }
+          render += `<br /> 
+
+          ### ` + list_prog[i]['name'] + `  
+
+          > ` + list_prog[i]['source'] + `  
+
+          **Purpose:** *` + list_prog[i]['purpose'] + `*  
+` + slides + repo;
         }
-        $('#proposed-times tbody').append(fragment)
+        $('.modal-body')[0].html(marked(render))
       }
       $(document).ready(function () {
         $.getJSON("./programs.json").done(function (data) {
