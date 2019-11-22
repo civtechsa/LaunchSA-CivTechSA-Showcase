@@ -238,19 +238,17 @@
         }
         $('#proposed-times tbody').empty()
         for (let i = 0; i < list_prog.length; i++) {
-          if (list_prog[i]["name"] == name) {
-            let tr = document.createElement("TR");
-            let td = document.createElement("TD");
-            td.append(document.createTextNode(list_prog[i]['name']));
-            tr.append(td);
-            td = document.createElement("TD");
-            td.append(document.createTextNode(list_prog[i]['source']));
-            tr.append(td);
-            td = document.createElement("TD");
-            td.append(document.createTextNode(dlist_prog[i]['purpose']));
-            tr.append(td);
-            fragment.append(tr);
-          }
+          let tr = document.createElement("TR");
+          let td = document.createElement("TD");
+          td.append(document.createTextNode(list_prog[i]['name']));
+          tr.append(td);
+          td = document.createElement("TD");
+          td.append(document.createTextNode(list_prog[i]['source']));
+          tr.append(td);
+          td = document.createElement("TD");
+          td.append(document.createTextNode(dlist_prog[i]['purpose']));
+          tr.append(td);
+          fragment.append(tr);
         }
       }
       $(document).ready(function () {
