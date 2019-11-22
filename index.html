@@ -252,6 +252,7 @@
           tr.append(td);
           fragment.append(tr);
         }
+        $('#proposed-times tbody').append(fragment)
       }
       $(document).ready(function () {
         $.getJSON("./programs.json").done(function (data) {
