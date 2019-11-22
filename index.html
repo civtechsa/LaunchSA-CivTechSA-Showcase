@@ -225,16 +225,13 @@
       function showModal(event) {
         event.preventDefault();
         let title = $('h5.modal-title')[0]
-        console.dir(event)
         let name = event.target.getAttribute("data-name");
         let group = event.target.getAttribute("data-group");
-        console.log(group)
         title.innerText = name;
         let fragment = new DocumentFragment()
         let list_prog = []
-        let group_list = group.split(" ");
         console.dir(group_list)
-        if (group_list.length < 2) {
+        if (group_list.length == 2) {
           list_prog = document.programs[group_list[0]][group_list[1]][name]
         } else {
           list_prog = document.programs[group][name]
