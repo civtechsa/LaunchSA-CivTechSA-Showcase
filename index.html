@@ -265,12 +265,12 @@ As students solve civic challenges through Geekdom’s CivTechSA Program, they b
 <br />
 ## 6-12th Grade`;
           $.each(document.programs["education"]["grade"], function (key, value) {
-            render += `\n ### <a href="javascript:void(0)" onclick="showModal()" target="_self" data-toggle="modal" data-target="#exampleModalLong" data-group="education grade" data-name="` + key + `">` + key + `</a>`;
+            render += `\n ### <a href="javascript:void(0)" onclick="showModal(event)" target="_self" data-toggle="modal" data-target="#exampleModalLong" data-group="education grade" data-name="` + key + `">` + key + `</a>`;
           });
           $("#education_content_1").html(marked(render));
           render = ``;
           $.each(document.programs["education"]["higher"], function (key, value) {
-            render += `\n ### <a href="javascript:void(0)" onclick="showModal()" target="_self" data-toggle="modal" data-target="#exampleModalLong" data-group="education higher" data-name="` + key + `">` + key + `</a>`;
+            render += `\n ### <a href="javascript:void(0)" onclick="showModal(event)" target="_self" data-toggle="modal" data-target="#exampleModalLong" data-group="education higher" data-name="` + key + `">` + key + `</a>`;
           });
           $("#education_content_2").html(marked(render));
         })
