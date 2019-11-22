@@ -237,7 +237,9 @@
           list_prog = document.programs[group][name]
         }
         $('#proposed-times tbody').empty()
+        console.dir(list_prog)
         for (let i = 0; i < list_prog.length; i++) {
+          console.dir(list_prog[i])
           let tr = document.createElement("TR");
           let td = document.createElement("TD");
           td.append(document.createTextNode(list_prog[i]['name']));
