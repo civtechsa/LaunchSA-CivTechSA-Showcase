@@ -236,11 +236,11 @@
           }
           render += `<br /> 
 
-          ### ` + list_prog[i]['name'] + `  
+### ` + list_prog[i]['name'] + `  
 
-          > ` + list_prog[i]['source'] + `  
+> ` + list_prog[i]['source'] + `  
 
-          **Purpose:** *` + list_prog[i]['purpose'] + `*  
+**Purpose:** *` + list_prog[i]['purpose'] + `*  
 ` + slides + repo;
         }
         $('.modal-body').eq(0).html(marked(render))
