@@ -154,18 +154,18 @@
   },
   "residency": [
       {
-        "name": "Burn notice residency 1 esfvsevsve",
-        "source": "Codeup Web Development Project",
-        "purpose": "Predictive model predicts drought within 6 months before the drought event.",
-        "slides": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing",
-        "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
+        "name": "DHS Emergency Services",
+        "source": "Kinetech Cloud - Year 1",
+        "purpose": "Utility assistance application form or system",
+        "slides": "https://drive.google.com/open?id=1t6B5HBvLD3ustOWPGWYdGgK2s1xZY98F",
+        "repo": ""
       },
       {
-        "name": "Burn notice residency 1 sdfsdfsdgsdfsdgdbdfdg",
-        "source": "Codeup Web Development Project",
-        "purpose": "Predictive model predicts drought within 6 months before the drought event.",
-        "slides": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing",
-        "repo": "https://docs.google.com/presentation/d/18OPSQhnRaPHrsueE3GfBtmDM4cWgquOKh6VnYpdlc_0/edit?usp=sharing"
+        "name": "San Antonio Airport Wayfinding",
+        "source": "Reckon Point - Year 1",
+        "purpose": "Indoor navigation and & information tool for travlers",
+        "slides": "https://drive.google.com/open?id=1pmibslJi1ttD-kJMII4LM5Qny7D4_zyi",
+        "repo": ""
       }
     ]
 }
