@@ -167,5 +167,12 @@
         "slides": "https://drive.google.com/open?id=1pmibslJi1ttD-kJMII4LM5Qny7D4_zyi",
         "repo": ""
       }
+          {
+        "name": "DHS Emergency Services",
+        "source": "Outreach Grid - Year 2",
+        "purpose": "Mobile technology platform that can track homeless individuals that are encountered in encampments",
+        "slides": "https://drive.google.com/open?id=1t6B5HBvLD3ustOWPGWYdGgK2s1xZY98F",
+        "repo": ""
+      },
     ]
 }
